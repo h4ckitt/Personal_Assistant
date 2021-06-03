@@ -36,7 +36,7 @@ func getVideo(update goTelegram.Update) {
 		return
 	}
 
-	if data.ExtendedEntities.Media[0].Type != "video" {
+	if len(data.ExtendedEntities.Media) == 0 || data.ExtendedEntities.Media[0].Type != "video" {
 		err := b.SendMessage("No Video Found In Provided URL", update.Message.Chat)
 
 		if err != nil {
