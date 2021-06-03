@@ -5,6 +5,7 @@ import (
 	"github.com/yoruba-codigy/goTelegram"
 	"log"
 	"net/http"
+	"os"
 	"regexp"
 	"strings"
 )
@@ -38,7 +39,7 @@ func main() {
 
 	fmt.Println("Starting Server")
 
-	err = http.ListenAndServe(":8080", http.HandlerFunc(b.UpdateHandler))
+	err = http.ListenAndServe(":"+os.Getenv("PORT"), http.HandlerFunc(b.UpdateHandler))
 }
 
 func handler(update goTelegram.Update) {
