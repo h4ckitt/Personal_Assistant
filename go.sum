@@ -1,4 +1,2 @@
-github.com/yoruba-codigy/goTelegram/v2 v2.0.0 h1:5F3rrr5bU493gXX3CkF356j93YinRvFYmtWuSmLoTnQ=
-github.com/yoruba-codigy/goTelegram/v2 v2.0.0/go.mod h1:L3495X4fFo5LapcS2cvqtLgDYIui9QCWdhZr/2k1gwo=
-github.com/yoruba-codigy/goTelegram/v2 v2.0.1 h1:O0MEMlJ8NNM38+HqKbsqsYHE9hPYmJ+reUG5OhTzr7U=
-github.com/yoruba-codigy/goTelegram/v2 v2.0.1/go.mod h1:L3495X4fFo5LapcS2cvqtLgDYIui9QCWdhZr/2k1gwo=
+github.com/yoruba-codigy/goTelegram v0.0.2-beta h1:3Fp1hDmSo3WKig3kiFdsNNBqFNDxLPXiSbFJgwEqqbU=
+github.com/yoruba-codigy/goTelegram v0.0.2-beta/go.mod h1:7zRat7Ztm5vXcPOGR27pRHsaZxGJ6eaPf5mYFpUv8jM=
