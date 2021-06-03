@@ -30,3 +30,8 @@ type variants struct {
 	ContentType string `json:"content_type"`
 	URL         string `json:"url"`
 }
+
+type replyData struct {
+	Data      data
+	Qualities []string
+}
