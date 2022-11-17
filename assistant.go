@@ -2,12 +2,13 @@ package main
 
 import (
 	"fmt"
-	"github.com/yoruba-codigy/goTelegram"
 	"log"
 	"net/http"
 	"os"
 	"regexp"
 	"strings"
+
+	"github.com/yoruba-codigy/goTelegram"
 )
 
 var (
@@ -22,7 +23,7 @@ func main() {
 	var err error
 
 	qualityReg, _ = regexp.Compile("[0-9]+x[0-9]+")
-	urlReg = regexp.MustCompile(`https:\/\/twitter.com\/\w+\/status\/([0-9]+)\?s=[0-9]+`)
+	urlReg = regexp.MustCompile(`https:\/\/twitter.com\/\w+\/status\/([0-9]+)(?:\?[a-z]+=[0-9A-Za-z_]+(?:\&[a-z]+=[0-9A-Za-z_-]+)*)*`)
 
 	choice = make(map[int]*replyData)
 
