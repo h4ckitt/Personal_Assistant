@@ -29,7 +29,7 @@ func main() {
 
 	client = &http.Client{}
 
-	b, err = goTelegram.NewBot("911112005:AAFSM5o7Cb1dmvETAqwwk496tp8RPSxpdjQ")
+	b, err = goTelegram.NewBot(os.Getenv("BOT_API_TOKEN"))
 
 	if err != nil {
 		log.Println("Couldn't Create Bot Successfully, Check Logs For More Details")
